@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LoMen - Shop Men's Fashion</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #ffffff;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-display">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<!-- Header Section -->
+<header class="mb-8">
+<div class="flex flex-wrap gap-2 mb-4">
+<a class="text-gray-500 text-sm font-medium leading-normal" href="#">Home</a>
+<span class="text-gray-500 text-sm font-medium leading-normal">/</span>
+<span class="text-gray-900 text-sm font-medium leading-normal">Shop</span>
+</div>
+<div class="flex flex-wrap justify-between items-center gap-4">
+<div class="flex flex-col gap-1">
+<h1 class="text-gray-900 text-4xl font-black leading-tight tracking-tight">Shop Men's Fashion</h1>
+<p class="text-gray-500 text-base font-normal leading-normal">Explore our curated collections of modern essentials.</p>
+</div>
+<div class="flex items-center gap-2 p-1 rounded-lg bg-gray-100">
+<button class="p-2 rounded-md bg-white shadow-sm text-gray-900">
+<span class="material-symbols-outlined">grid_view</span>
+</button>
+<button class="p-2 rounded-md text-gray-500">
+<span class="material-symbols-outlined">view_list</span>
+</button>
+</div>
+</div>
+</header>
+<div class="flex flex-col lg:flex-row gap-8 lg:gap-12">
+<!-- Sidebar Filter Panel -->
+<aside class="w-full lg:w-1/4">
+<div class="flex justify-between items-center mb-4">
+<h2 class="text-lg font-bold">Filters</h2>
+<button class="text-sm text-gray-500 hover:text-gray-900">Clear All</button>
+</div>
+<div class="flex flex-col divide-y divide-gray-200">
+<details class="py-4 group" open="">
+<summary class="flex cursor-pointer items-center justify-between list-none">
+<span class="text-sm font-medium">Category</span>
+<span class="material-symbols-outlined text-gray-900 group-open:rotate-180 transition-transform duration-200">expand_more</span>
+</summary>
+<div class="mt-4 space-y-3">
+<label class="flex items-center gap-3 text-sm text-gray-600"><input checked="" class="h-4 w-4 rounded border-gray-300 text-gray-900 focus:ring-gray-900" type="checkbox"/> Formal</label>
+<label class="flex items-center gap-3 text-sm text-gray-600"><input class="h-4 w-4 rounded border-gray-300 text-gray-900 focus:ring-gray-900" type="checkbox"/> Casual</label>
+<label class="flex items-center gap-3 text-sm text-gray-600"><input class="h-4 w-4 rounded border-gray-300 text-gray-900 focus:ring-gray-900" type="checkbox"/> Streetwear</label>
+<label class="flex items-center gap-3 text-sm text-gray-600"><input class="h-4 w-4 rounded border-gray-300 text-gray-900 focus:ring-gray-900" type="checkbox"/> Accessories</label>
+</div>
+</details>
+<details class="py-4 group">
+<summary class="flex cursor-pointer items-center justify-between list-none">
+<span class="text-sm font-medium">Price Range</span>
+<span class="material-symbols-outlined text-gray-900 group-open:rotate-180 transition-transform duration-200">expand_more</span>
+</summary>
+<div class="w-full pt-8 pb-4">
+<div class="relative h-1 bg-gray-200 rounded-full">
+<div class="absolute h-1 bg-gray-900 rounded-full" style="left: 10%; right: 25%;"></div>
+<div class="absolute -top-2" style="left: 10%;">
+<div class="relative">
+<div class="absolute size-4 rounded-full bg-gray-900 -translate-x-1/2 cursor-pointer"></div>
+<p class="absolute -top-6 text-xs -translate-x-1/2">$50</p>
+</div>
+</div>
+<div class="absolute -top-2" style="right: 25%;">
+<div class="relative">
+<div class="absolute size-4 rounded-full bg-gray-900 -translate-x-1/2 cursor-pointer"></div>
+<p class="absolute -top-6 text-xs -translate-x-1/2">$350</p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="py-4 group">
+<summary class="flex cursor-pointer items-center justify-between list-none">
+<span class="text-sm font-medium">Size</span>
+<span class="material-symbols-outlined text-gray-900 group-open:rotate-180 transition-transform duration-200">expand_more</span>
+</summary>
+<div class="mt-4 grid grid-cols-3 gap-2">
+<label class="cursor-pointer text-center py-2 px-3 border rounded-md text-sm has-[:checked]:bg-gray-900 has-[:checked]:text-white has-[:checked]:border-gray-900">
+<input class="sr-only" type="checkbox"/> XS
+                             </label>
+<label class="cursor-pointer text-center py-2 px-3 border rounded-md text-sm has-[:checked]:bg-gray-900 has-[:checked]:text-white has-[:checked]:border-gray-900">
+<input class="sr-only" type="checkbox"/> S
+                             </label>
+<label class="cursor-pointer text-center py-2 px-3 border rounded-md text-sm has-[:checked]:bg-gray-900 has-[:checked]:text-white has-[:checked]:border-gray-900">
+<input checked="" class="sr-only" type="checkbox"/> M
+                             </label>
+<label class="cursor-pointer text-center py-2 px-3 border rounded-md text-sm has-[:checked]:bg-gray-900 has-[:checked]:text-white has-[:checked]:border-gray-900">
+<input class="sr-only" type="checkbox"/> L
+                             </label>
+<label class="cursor-pointer text-center py-2 px-3 border rounded-md text-sm has-[:checked]:bg-gray-900 has-[:checked]:text-white has-[:checked]:border-gray-900">
+<input class="sr-only" type="checkbox"/> XL
+                             </label>
+<label class="cursor-pointer text-center py-2 px-3 border rounded-md text-sm has-[:checked]:bg-gray-900 has-[:checked]:text-white has-[:checked]:border-gray-900">
+<input class="sr-only" type="checkbox"/> XXL
+                             </label>
+</div>
+</details>
+<details class="py-4 group">
+<summary class="flex cursor-pointer items-center justify-between list-none">
+<span class="text-sm font-medium">Color</span>
+<span class="material-symbols-outlined text-gray-900 group-open:rotate-180 transition-transform duration-200">expand_more</span>
+</summary>
+<div class="mt-4 flex flex-wrap gap-3">
+<label class="relative cursor-pointer"><input class="sr-only" name="color-swatch" type="radio"/><span class="block w-6 h-6 rounded-full bg-black ring-2 ring-offset-1 ring-black"></span></label>
+<label class="relative cursor-pointer"><input class="sr-only" name="color-swatch" type="radio"/><span class="block w-6 h-6 rounded-full bg-white border border-gray-300"></span></label>
+<label class="relative cursor-pointer"><input class="sr-only" name="color-swatch" type="radio"/><span class="block w-6 h-6 rounded-full bg-gray-400"></span></label>
+<label class="relative cursor-pointer"><input class="sr-only" name="color-swatch" type="radio"/><span class="block w-6 h-6 rounded-full bg-gray-700"></span></label>
+<label class="relative cursor-pointer"><input class="sr-only" name="color-swatch" type="radio"/><span class="block w-6 h-6 rounded-full bg-blue-900"></span></label>
+</div>
+</details>
+<details class="py-4 group border-b border-b-gray-200">
+<summary class="flex cursor-pointer items-center justify-between list-none">
+<span class="text-sm font-medium">Brand</span>
+<span class="material-symbols-outlined text-gray-900 group-open:rotate-180 transition-transform duration-200">expand_more</span>
+</summary>
+<div class="mt-4 space-y-3">
+<label class="flex items-center gap-3 text-sm text-gray-600"><input checked="" class="h-4 w-4 rounded border-gray-300 text-gray-900 focus:ring-gray-900" type="checkbox"/> LoMen Signature</label>
+<label class="flex items-center gap-3 text-sm text-gray-600"><input class="h-4 w-4 rounded border-gray-300 text-gray-900 focus:ring-gray-900" type="checkbox"/> Collaborator A</label>
+<label class="flex items-center gap-3 text-sm text-gray-600"><input class="h-4 w-4 rounded border-gray-300 text-gray-900 focus:ring-gray-900" type="checkbox"/> Collaborator B</label>
+</div>
+</details>
+</div>
+<div class="mt-6">
+<h3 class="text-sm font-medium mb-3">Active Filters:</h3>
+<div class="flex flex-wrap gap-2">
+<span class="flex items-center gap-1.5 bg-gray-100 rounded-full py-1 px-3 text-xs font-medium">Formal <button><span class="material-symbols-outlined !text-sm">close</span></button></span>
+<span class="flex items-center gap-1.5 bg-gray-100 rounded-full py-1 px-3 text-xs font-medium">M <button><span class="material-symbols-outlined !text-sm">close</span></button></span>
+<span class="flex items-center gap-1.5 bg-gray-100 rounded-full py-1 px-3 text-xs font-medium">LoMen <button><span class="material-symbols-outlined !text-sm">close</span></button></span>
+</div>
+</div>
+</aside>
+<!-- Product Grid -->
+<main class="w-full lg:w-3/4">
+<div class="flex flex-wrap justify-between items-center gap-4 mb-6">
+<p class="text-sm text-gray-600">Showing 24 of 156 products</p>
+<div class="flex items-center gap-2">
+<label class="text-sm text-gray-600" for="sort">Sort by:</label>
+<select class="border-gray-300 rounded-md shadow-sm text-sm focus:border-gray-900 focus:ring-gray-900" id="sort">
+<option>Featured</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+<option>Newest</option>
+<option>Best Selling</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-10">
+<!-- Product Card 1 -->
+<div class="group relative">
+<div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-100">
+<img alt="Black tailored wool blazer with a single button closure." class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ2DUW-TqWmnWF7flywUeaJM0F9UEB4yuWUKjGyPC82AyJgfte8TWc-kx_cd0I6wcgClV3gIh_tzceD0K4KKSLOI_n6mZGOfP3ixk4YBTW581f7xSqto9NbJHqKu1EsmbJYZeBvq5I2SYLJ043vCYLCCPbFrHAW6sAzRIssJaFt8eOfVLFKaDpPvKHFO3tUjhoE9nfy5uAJkVsI2pndtW8SONSrLhDlGM3cii9eTHml6ypfhbXq1oIEQYQWLw7EKBqxv-F6EiVwwUs"/>
+<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></div>
+<button class="absolute top-3 right-3 p-2 rounded-full bg-white/50 backdrop-blur-sm text-gray-900 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 right-0 p-4 translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+<button class="w-full bg-white text-gray-900 py-2.5 px-4 rounded-md text-sm font-semibold">Add to Cart</button>
+</div>
+<span class="absolute top-3 left-3 bg-white text-gray-900 text-xs font-bold px-2 py-1 rounded-full">New Arrival</span>
+</div>
+<div class="mt-4">
+<h3 class="text-sm font-semibold text-gray-900">Wool Blend Blazer</h3>
+<p class="mt-1 text-sm text-gray-700">$250.00</p>
+</div>
+<div class="mt-2 flex items-center gap-2">
+<span class="block w-4 h-4 rounded-full bg-black border-2 border-white ring-1 ring-gray-400"></span>
+<span class="block w-4 h-4 rounded-full bg-gray-700 border-2 border-white ring-1 ring-gray-400"></span>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group relative">
+<div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-100">
+<img alt="A pair of classic brown leather dress shoes with laces." class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARjYSknrfgM-Q2SW1SyZg9zjI94v_oRwPts74RPyvd-3IF8GHNyS7YyiS50p50EAZM_V1n13Z_qO5M2rEjgxfLtn4CFbgWCmrpf31Iz-woVHKtj7gKi1vzTd2J7iHCJAC5OHZgBisGesMOC-cM7dTo-ii51JKiftVi1j0Ej5gAXktzMZV18UbdSPuibhcbkn_7TqRsNyugCgkSVvNaPpJ76gs3HwbslK0r86DwaAbzQo2Ip53YpfKE7hq97HsvAeviU3hLCK4knmjQ"/>
+<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></div>
+<button class="absolute top-3 right-3 p-2 rounded-full bg-white/50 backdrop-blur-sm text-gray-900 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 right-0 p-4 translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+<button class="w-full bg-white text-gray-900 py-2.5 px-4 rounded-md text-sm font-semibold">Add to Cart</button>
+</div>
+<span class="absolute top-3 left-3 bg-black text-white text-xs font-bold px-2 py-1 rounded-full">Sale</span>
+</div>
+<div class="mt-4">
+<h3 class="text-sm font-semibold text-gray-900">Leather Oxford Shoes</h3>
+<p class="mt-1 text-sm text-gray-700">
+<span class="text-red-600">$180.00</span>
+<span class="line-through text-gray-500 ml-2">$220.00</span>
+</p>
+</div>
+<div class="mt-2 flex items-center gap-2">
+<span class="block w-4 h-4 rounded-full bg-yellow-900 border-2 border-white ring-1 ring-gray-400"></span>
+<span class="block w-4 h-4 rounded-full bg-black border-2 border-white ring-1 ring-gray-400"></span>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group relative">
+<div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-100">
+<img alt="A slim-fit white cotton shirt with a button-down collar." class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhn2ADFJQXBNVkQ5070eDurnWf72u7D3WpZR11eiKnmmCFbBrVgn31huHi_HTkOS4pPf3eW7ZpEg0djk0gmmFmmULSQh0dzbjCDcVJFPwpa1HX0YSc3GA9HVA9fIIPY9SpaXu3YeQ9ct3hTXm83VV5SSS9lVsJya0UB2j3FYcpiEX1Dn6oRz764Bd3b1hsWYpXNZIVrFw7Hl714UKTUY2q_wiVfBJm2uCmUwrweZFLtFAztM64Ng7Zr60rQQyMTA6LDUvUmfI5pGJJ"/>
+<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></div>
+<button class="absolute top-3 right-3 p-2 rounded-full bg-white/50 backdrop-blur-sm text-gray-900 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 right-0 p-4 translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+<button class="w-full bg-white text-gray-900 py-2.5 px-4 rounded-md text-sm font-semibold">Add to Cart</button>
+</div>
+</div>
+<div class="mt-4">
+<h3 class="text-sm font-semibold text-gray-900">Slim-Fit Cotton Shirt</h3>
+<p class="mt-1 text-sm text-gray-700">$85.00</p>
+</div>
+<div class="mt-2 flex items-center gap-2">
+<span class="block w-4 h-4 rounded-full bg-white border-2 border-white ring-1 ring-gray-400"></span>
+<span class="block w-4 h-4 rounded-full bg-blue-200 border-2 border-white ring-1 ring-gray-400"></span>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group relative">
+<div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-100">
+<img alt="A pair of dark wash denim jeans with a straight-leg fit." class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEeymL2MODxHcypgHSS7CfZdnxkRckZs0YWIivbMgS_aDA_y2FAf2o9ROlp1xP-Ng_g5ExHCxBBZ1Oh1eqVzdPyA8p73fGnoO-2Zkqwo_0k38V4k-fYsVtzidazhdxWF9qlNCkfIX5w96WyfOSj-wr4P-SJomIc9xvudbgNvkZg1f14NKQ6a6DaxbpkdGO8DLDfkXdh5SwsvuvXStr5XPLhOvwoAAHJWyMzmdvAa-bs5abMdUOnvsKNxAVAAyg4gMh7oG4WzGUAJWb"/>
+<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></div>
+<button class="absolute top-3 right-3 p-2 rounded-full bg-white/50 backdrop-blur-sm text-gray-900 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 right-0 p-4 translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+<button class="w-full bg-white text-gray-900 py-2.5 px-4 rounded-md text-sm font-semibold">Add to Cart</button>
+</div>
+</div>
+<div class="mt-4">
+<h3 class="text-sm font-semibold text-gray-900">Classic Straight Jeans</h3>
+<p class="mt-1 text-sm text-gray-700">$120.00</p>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="group relative">
+<div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-100">
+<img alt="A grey merino wool sweater with a crew neck." class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW5je20M5HR8xjdSnhxVt0x9bntbnfEAr9n3JT-Ldk3lTox882Vq7BWeGKQ7dEGwr1louwiG3myEmgNjuQ1UcoaONfpR535Wk_SbqUS_pH4DwDLQd2HOPbP3LYzshsJoOaWmNZ2cQlQvKiY1igpJQUESEEy7jq8GSpLVWwhmuh3smrYZ3A5pvdkK_gKn6weMKVDV-MARFnXXQzfKeYTWSjKHbYwx8nugx1UbJp4wZ-8odC8Tuy7_3GlnuUum2mAqtdH6-KtYS7zFPH"/>
+<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></div>
+<button class="absolute top-3 right-3 p-2 rounded-full bg-white/50 backdrop-blur-sm text-gray-900 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 right-0 p-4 translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+<button class="w-full bg-white text-gray-900 py-2.5 px-4 rounded-md text-sm font-semibold">Add to Cart</button>
+</div>
+<span class="absolute top-3 left-3 bg-white text-gray-900 text-xs font-bold px-2 py-1 rounded-full">Best Seller</span>
+</div>
+<div class="mt-4">
+<h3 class="text-sm font-semibold text-gray-900">Merino Crewneck Sweater</h3>
+<p class="mt-1 text-sm text-gray-700">$145.00</p>
+</div>
+<div class="mt-2 flex items-center gap-2">
+<span class="block w-4 h-4 rounded-full bg-gray-400 border-2 border-white ring-1 ring-gray-400"></span>
+<span class="block w-4 h-4 rounded-full bg-green-900 border-2 border-white ring-1 ring-gray-400"></span>
+<span class="block w-4 h-4 rounded-full bg-blue-900 border-2 border-white ring-1 ring-gray-400"></span>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="group relative">
+<div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-100">
+<img alt="A black leather belt with a silver buckle." class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw5XF74jVZQfsihPzHfh1MRF5QlQxb4ktu5SV0xVsDPuEn-YcnRchM2Xpcc5FdVTE-WZQWWGZmX7jfmIxlbcFWauVryiyLYpArg7pYTCUfCY1HpmnK6BrCIDBG4Op5Tu3VD8KqgOtyMbF2fZ6smbGw8Tb2nSQ7vk5s-JtVEsxdri8PtpGApPIhA9PpNGB1v4xClnctlBm-2n0BAkd-yMiFi3aqjB1pxgMf5QITHQCeAxtwiCILFDVqv2En38_tLkExL4DkDUGIla7K"/>
+<div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></div>
+<button class="absolute top-3 right-3 p-2 rounded-full bg-white/50 backdrop-blur-sm text-gray-900 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 right-0 p-4 translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+<button class="w-full bg-white text-gray-900 py-2.5 px-4 rounded-md text-sm font-semibold">Add to Cart</button>
+</div>
+</div>
+<div class="mt-4">
+<h3 class="text-sm font-semibold text-gray-900">Classic Leather Belt</h3>
+<p class="mt-1 text-sm text-gray-700">$65.00</p>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<nav class="flex items-center justify-between border-t border-gray-200 mt-12 pt-6">
+<div class="flex flex-1 justify-start">
+<a class="inline-flex items-center pl-1 pr-4 py-2 border border-transparent text-sm font-medium rounded-md text-gray-600 bg-white hover:bg-gray-100" href="#">
+<span class="material-symbols-outlined">arrow_back</span>
+<span class="ml-2">Previous</span>
+</a>
+</div>
+<div class="hidden md:flex">
+<a class="px-4 py-2 border-t-2 border-transparent text-sm font-medium text-gray-600 hover:border-gray-300 hover:text-gray-800" href="#">1</a>
+<a aria-current="page" class="px-4 py-2 border-t-2 border-gray-900 text-sm font-medium text-gray-900" href="#">2</a>
+<a class="px-4 py-2 border-t-2 border-transparent text-sm font-medium text-gray-600 hover:border-gray-300 hover:text-gray-800" href="#">3</a>
+<span class="px-4 py-2 border-t-2 border-transparent text-sm font-medium text-gray-600">...</span>
+<a class="px-4 py-2 border-t-2 border-transparent text-sm font-medium text-gray-600 hover:border-gray-300 hover:text-gray-800" href="#">8</a>
+</div>
+<div class="flex flex-1 justify-end">
+<a class="inline-flex items-center pl-4 pr-1 py-2 border border-transparent text-sm font-medium rounded-md text-gray-600 bg-white hover:bg-gray-100" href="#">
+<span class="mr-2">Next</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</nav>
+</main>
+</div>
+</div>
+</body></html>

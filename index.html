@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LoMen - Men's Clothing Club</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400,FILL@0..1" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#000000",
+              "background-light": "#f5f5f5",
+              "background-dark": "#000000",
+              "charcoal": "#333333",
+              "ash": "#999999",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased">
+<div class="relative w-full">
+<!-- Main Container -->
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-charcoal/20 dark:border-charcoal bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-6 sm:px-10 lg:px-20 py-4">
+<div class="flex items-center gap-4 text-primary dark:text-white">
+<div class="size-5">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-primary dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">LoMen</h2>
+</div>
+<div class="flex flex-1 justify-end items-center gap-8">
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-primary dark:text-white text-sm font-medium leading-normal hover:text-ash dark:hover:text-ash transition-colors" href="#collections">Collections</a>
+<a class="text-primary dark:text-white text-sm font-medium leading-normal hover:text-ash dark:hover:text-ash transition-colors" href="#showcase">Showcase</a>
+<a class="text-primary dark:text-white text-sm font-medium leading-normal hover:text-ash dark:hover:text-ash transition-colors" href="#about">About</a>
+</nav>
+<button class="flex cursor-pointer items-center justify-center rounded-lg h-10 w-10 bg-primary/10 dark:bg-charcoal text-primary dark:text-white hover:bg-primary/20 dark:hover:bg-white/20 transition-colors">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</header>
+<main class="flex-1">
+<!-- HeroSection -->
+<section class="w-full flex justify-center py-10 lg:py-20 px-4 sm:px-10 lg:px-20">
+<div class="w-full max-w-7xl">
+<div class="flex min-h-[60vh] md:min-h-[70vh] flex-col gap-8 rounded-xl items-center justify-center p-8 text-center bg-cover bg-center" data-alt="Dramatic black and white high-contrast fashion photograph of a man in a tailored suit." style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBkzCz0mCynTUkw7CpbBKgDBRNDfsJazl1Y1t6_EXOe6e9PlDlGkmmb0UxmCwDudNkYxyz9UsGFsWXnHeGVnm4C1wVIsuv5JtwO0EaWuBhOK4nRi_pYMUUujud7mczpH0PU08VtZIW-OzHzcFQabEuN2jxILAdf-qXuHiK5QekCKtzDfZc8ddS3Tzmc4mlZbIC199xzWQmpwTl8hvBF0Dfl8eRJFgNAyzAW6G8zdpnJQ1eX3vfCxqHJ24bDIaVRdq8HPH570zFN4T-R");'>
+<div class="flex flex-col gap-4">
+<h1 class="text-white text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-[-0.033em]">Elevate Your Style</h1>
+<h2 class="text-white/90 text-base sm:text-lg font-normal leading-normal max-w-xl mx-auto">Discover our commitment to timeless design, premium quality, and sustainable craftsmanship.</h2>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-white text-primary text-base font-bold leading-normal tracking-[0.015em] hover:bg-ash/80 hover:text-white transition-colors">
+<span class="truncate">Shop Now</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Featured Collections Section -->
+<section class="w-full flex justify-center py-10 lg:py-20 px-4 sm:px-10 lg:px-20 bg-white dark:bg-primary" id="collections">
+<div class="w-full max-w-7xl">
+<h2 class="text-primary dark:text-white text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-8 text-center">Featured Collections</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-cover bg-center flex flex-col rounded-xl justify-end p-6 aspect-[3/4] group overflow-hidden" data-alt="A man wearing a sharp business suit, representing The Executive collection." style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 40%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAsdIsy2aTl5F1LwZV_IPAF7hfD7YljZodAEPS2t5cUvBKYKc_-jz0Pliumhd4zPdTtXNb1fDKgpvH-z9K85TrtMUiEl0LT1B_h2OXLPx83S5-UE7evkVKEYuGdqD0H5-Y3x3ONob5mYL2g6v_YrHkOt6BBSseVE97uA9au4jOrgzwUIq8Xr7ce4xr-gEYIpFycsxTLrco1R8OpHsUUnehHIOjwqw3tl-1epWVqYREoOIJWlf2radlFtrIhwnrKbf1cgXfB8paHbT6W");'>
+<p class="text-white text-2xl font-bold leading-tight transform group-hover:-translate-y-2 transition-transform duration-300">The Executive</p>
+</div>
+<div class="bg-cover bg-center flex flex-col rounded-xl justify-end p-6 aspect-[3/4] group overflow-hidden" data-alt="A man in casual yet stylish weekend attire, part of The Weekender collection." style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 40%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC9wW5vLcDqXWi1OxZX9hxx9YgY3UGBDXIvb5gm5KqnkOpPmuMPbHdSwyHiCT_viieVC3sYqCi70CU-4yFHFBVIPBMiEauqKrGGi7sd4dmA2PPziHoYbixdRP-Hd-14ajep2oIdCaTO8ghu594n9Rj_wUXjnJINwDFTmzRXKYQLthatlGz6qlZYWzjUs8QjGDpHvt_XkHibbvlvx9WfLho1XlUklinkDfnP4RPQwhJ69A7p5OAQ3j39H8HkRcAKSf15Jl183omonmng");'>
+<p class="text-white text-2xl font-bold leading-tight transform group-hover:-translate-y-2 transition-transform duration-300">The Weekender</p>
+</div>
+<div class="bg-cover bg-center flex flex-col rounded-xl justify-end p-6 aspect-[3/4] group overflow-hidden" data-alt="Close-up on the details of a formal shirt and tie from The Formal Edit collection." style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 40%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCYwB8hl1uJZ-BIrSEuk8puwkOdFWD00S8sq4SIz6rXdhdOzuK35hoaKPcYoP5V34tr7bkmSvMEAEng_1poDnLuLH6-QFctFd2hQsh7ZfnxdPr1FT2S1aSRaUxUQqMTme6Mp5UBnGSuC7c_ctL9Xk62WZqGGLHbPLsT5jg9CN7qZ20t8Te8d1du8TQjTdJshkcW-N5jbKN3P9OIOtcdxJEIYcH0adjVsP1HK-mNtlXpxiVwfbzEB2whcoSjSmm061OlhBIwzQ9VGdgt");'>
+<p class="text-white text-2xl font-bold leading-tight transform group-hover:-translate-y-2 transition-transform duration-300">The Formal Edit</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Showcase Section -->
+<section class="w-full flex justify-center py-10 lg:py-20 px-4 sm:px-10 lg:px-20 bg-background-light dark:bg-background-dark" id="showcase">
+<div class="w-full max-w-7xl">
+<h2 class="text-primary dark:text-white text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-8 text-center">Product Showcase</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Product Card 1 -->
+<div class="flex flex-col gap-4 group">
+<div class="overflow-hidden rounded-xl">
+<div class="bg-cover bg-center w-full aspect-[3/4] rounded-xl group-hover:scale-105 transition-transform duration-300" data-alt="A monochrome image of a tailored navy blazer on a mannequin." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCR0I2p9Ydy81gBNkm8KTpublaP12zIILWTksw6nOG8l4lfad4q-QqD1c6LAQzrBBuBbo-Xdovwaq6q3DhNH7mtaAZY-Zn3yn7x7zyjQjsbyI_8Uv7zY0Hqm7mqGRZXN-FiIFhykdM2k7jS_7odf8TKOJ-Yxx2meDuetXw1X_202bd2OTYQV8-5uzMlFbNs9CAkxRi0obBG6XnFL7SE-uUEN-03-jl4C5FCPvcjmPbnS4nH5-Wrfl-idSqydb2l60sJjStIRwVP6QHw');"></div>
+</div>
+<div class="flex flex-col items-center text-center">
+<h3 class="text-lg font-bold text-primary dark:text-white">Midnight Wool Blazer</h3>
+<p class="text-sm text-ash">Sustainably Sourced Wool</p>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="flex flex-col gap-4 group">
+<div class="overflow-hidden rounded-xl">
+<div class="bg-cover bg-center w-full aspect-[3/4] rounded-xl group-hover:scale-105 transition-transform duration-300" data-alt="A crisp white Oxford shirt neatly folded." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB3uu1TM8wQE2ySky_G9hmujjz5LTwdggB9GsNPCRNFC0lHt98X9eCtyaMWi1i7OZOGd1oAvP4w3mleXjJ4ko2ic5tbfH_mOiun_5KnJfgB1x6l9yze8BIe2Ii9mytVhEFthgTPr18UqkOEVp6ZQK3X_P8cjNd2rPfOhXoy99u1kmnR90CdvfSFEgfKuSYGIGgG5S26J2Y1gVk4glzCojc_31SCPQduTFXf1h9jla7DMpDKZKUx6vUGmn8zVxW48sM1QbjFPzFqH3jv');"></div>
+</div>
+<div class="flex flex-col items-center text-center">
+<h3 class="text-lg font-bold text-primary dark:text-white">Essential Oxford Shirt</h3>
+<p class="text-sm text-ash">100% Organic Cotton</p>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="flex flex-col gap-4 group">
+<div class="overflow-hidden rounded-xl">
+<div class="bg-cover bg-center w-full aspect-[3/4] rounded-xl group-hover:scale-105 transition-transform duration-300" data-alt="A pair of dark denim jeans with detailed stitching." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDlSkjiMGzdYWpkcudSuXL75FHHISm5d0HPmSncGsSQcFIOdtwHMbLAFNU_ad7TkXDdc8fy1aeZuvMkPbB2GXg4A_nTgQtZ9FiEarL12heYhkhFvF7sFzl_lo5KMj8atlfm88GVyq_2cP7o6g8DK-eLlxwo5SSIvt6va7eQlsz9-bQNjrVZxQ1VTEdsH2ljOvnQ6K5CuVF9YQbEiA7J8USmiZzEiX2dOcSXSaTsWMKxA_TW3zOOqyLh-NgHNNN4yog6xbSxGOQA8Cir');"></div>
+</div>
+<div class="flex flex-col items-center text-center">
+<h3 class="text-lg font-bold text-primary dark:text-white">Modern Selvedge Denim</h3>
+<p class="text-sm text-ash">Handcrafted for Durability</p>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="flex flex-col gap-4 group">
+<div class="overflow-hidden rounded-xl">
+<div class="bg-cover bg-center w-full aspect-[3/4] rounded-xl group-hover:scale-105 transition-transform duration-300" data-alt="A stylish leather weekender bag." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC2zxJGg36Ut-TrYQA-ENNbwMGU9qDus3_C29j8ub5S8Ye94Cj4p9bSj-LhB7ikOFkM6Ke9WgyYFcsyr0X60wVRTje5SAcHgOGHBaXc9wgUc3Og3SvYTh8TLCUbFyQOwPv5PvLXl66mqd0q0pN6yWp3C3ITuDBkxTlBVwjYoeoJ1wzDmuuVLe--dNoqU8yQFR5e3GjfTUDNmqhG1MZcXAEDKYyOyHag4RciJ7dzhCFLCiOIKW64GT0r_ZoEYmLiPKD4s1cLSQAJnaGQ');"></div>
+</div>
+<div class="flex flex-col items-center text-center">
+<h3 class="text-lg font-bold text-primary dark:text-white">Leather Weekender</h3>
+<p class="text-sm text-ash">Italian Full-Grain Leather</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="w-full flex justify-center py-10 lg:py-20 px-4 sm:px-10 lg:px-20 bg-white dark:bg-primary" id="about">
+<div class="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-6 text-center lg:text-left">
+<h2 class="text-primary dark:text-white text-3xl font-bold leading-tight tracking-[-0.015em]">The Philosophy of LoMen</h2>
+<p class="text-charcoal dark:text-white/80 leading-relaxed">LoMen was founded on the belief that style is a form of self-expression. We craft timeless pieces for the modern man, focusing on superior quality, ethical production, and a minimalist aesthetic that transcends fleeting trends. Our commitment is to create a wardrobe that is not only stylish but also sustainable and built to last.</p>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-4 text-center">
+<div>
+<p class="text-4xl font-black text-primary dark:text-white">2020</p>
+<p class="text-sm text-ash">Founded</p>
+</div>
+<div>
+<p class="text-4xl font-black text-primary dark:text-white">100%</p>
+<p class="text-sm text-ash">Sustainable Fabrics</p>
+</div>
+<div>
+<p class="text-4xl font-black text-primary dark:text-white">50+</p>
+<p class="text-sm text-ash">Timeless Designs</p>
+</div>
+</div>
+</div>
+<div class="w-full aspect-square lg:aspect-[4/5] rounded-xl bg-cover bg-center" data-alt="A black and white abstract image of fabric textures and geometric patterns, representing craftsmanship." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCtv8eG9E7VkTPT-CpGS57QSShD5PKqmWaQ_aKCAyh54vidcc9z4F1kGNVsUyADP8rVOgO0OaNcM4nC4dEdMJDHGKZGI_Mc6UUEO-cwdojMAHkXBhPsDYX8kNVEw5kPGnH0b5KlS67W7HQRPVUnO_tV4elEQV0fdkuPB19ALDic9672bCiu2ZuCWT3yB2blxU6nK49caEanxRwyhWXj88wy3LFEB1ZUjMwOPmM9Vpnnmp6Oj9ZZuqjVDVG_IoMrbahuiLfNTSnp3w2t');"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full flex justify-center py-10 lg:py-16 px-4 sm:px-10 lg:px-20 bg-primary text-white">
+<div class="w-full max-w-7xl flex flex-col items-center gap-8">
+<div class="flex items-center gap-4">
+<div class="size-5">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path></svg>
+</div>
+<h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">LoMen</h2>
+</div>
+<div class="flex items-center gap-6">
+<a class="text-white hover:text-ash transition-colors" href="#">Instagram</a>
+<a class="text-white hover:text-ash transition-colors" href="#">Twitter</a>
+<a class="text-white hover:text-ash transition-colors" href="#">Facebook</a>
+</div>
+<p class="text-sm text-ash text-center">© 2024 LoMen Men's Clothing Club. All Rights Reserved. A minimalist design for the modern gentleman.</p>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

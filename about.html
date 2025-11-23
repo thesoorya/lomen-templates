@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About LoMen - The Art of Modern Tailoring</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#0d40a5",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101622",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-6xl flex-1 px-4 sm:px-6 lg:px-8">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200/20 dark:border-white/10 px-6 sm:px-10 py-4">
+<div class="flex items-center gap-4 text-gray-800 dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-gray-900 dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">LoMen</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm font-medium leading-normal" href="#">Shop</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm font-medium leading-normal" href="#">New Arrivals</a>
+<a class="text-gray-900 dark:text-white text-sm font-bold leading-normal" href="#">About Us</a>
+<a class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm font-medium leading-normal" href="#">Contact</a>
+</div>
+<div class="flex gap-2">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-100 dark:bg-white/10 text-gray-800 dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-xl">search</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-100 dark:bg-white/10 text-gray-800 dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-xl">person</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-100 dark:bg-white/10 text-gray-800 dark:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-xl">shopping_bag</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<!-- HeroSection -->
+<section class="py-20 sm:py-28 @container">
+<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4" data-alt="Abstract geometric line pattern in dark gray" style='background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAf0Yk5pEbe7nS_iZEI_i9-5LtBixwNy-zEjFCUkocT9Sz3dW7C3PzdmLNvXPr-XEGQd7ue11182CGyHxXFQDdLRFDey8wXS1B9G3sgaKKn15YxpOxlcwh_gnlje1JRdMHgVEFNUzqPF2v5DYN6D7ORfa8nPj1_Oc_m-rB74NjUl6vH3ued1XtR0lEnOtPuiGp2zYrBaMD8NO5w5qKLsH-_3RLtizb5p97ELs6MXN89ZmZrYQMtwUMMfTddl3I9-7F1S5j7TKd0g_L6");'>
+<div class="flex flex-col gap-4 text-center">
+<h1 class="text-white text-4xl font-black leading-tight tracking-tighter @[480px]:text-6xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-tighter">
+                                        About LoMen
+                                    </h1>
+<h2 class="text-gray-300 text-lg font-normal leading-normal @[480px]:text-xl @[480px]:font-normal @[480px]:leading-normal">
+                                        The Art of Modern Tailoring.
+                                    </h2>
+</div>
+<p class="max-w-2xl text-center text-gray-200 text-base">We believe in the power of a well-made garment to instill confidence and express individuality. Our mission is to craft timeless pieces that blend classic techniques with contemporary design.</p>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+<span class="truncate">Explore The Collection</span>
+</button>
+</div>
+</section>
+<!-- Our Story Section -->
+<section class="py-16 sm:py-24">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-6">
+<h2 class="text-gray-900 dark:text-white text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
+                                        Our Story
+                                    </h2>
+<p class="text-gray-600 dark:text-gray-300 text-base font-normal leading-relaxed">
+                                        Founded in 2010, LoMen was born from a desire to redefine men's fashion. Our founder, a third-generation tailor, envisioned a brand that honors the heritage of bespoke craftsmanship while embracing the clean lines and functionality of modern design. Every stitch, fabric, and silhouette is a testament to our dedication to quality, sustainability, and the pursuit of effortless style.
+                                    </p>
+<blockquote class="border-l-4 border-primary pl-6 italic text-gray-700 dark:text-gray-400">
+<p>"Style is more than what you wear—it's how you carry yourself. Our clothing is simply the canvas."</p>
+<cite class="mt-2 block font-semibold text-gray-800 dark:text-gray-200">- Founder of LoMen</cite>
+</blockquote>
+</div>
+<div class="w-full aspect-square bg-center bg-no-repeat bg-cover rounded-xl" data-alt="Black and white photo of a tailor meticulously measuring fabric in a workshop" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA7dUarHkrXMNUjixvyk2NdOzoRoqYcFeIKLgerAPTd2cB-79UoWh965dqynogqCillYeSJgE3g3xCLC_LyGirYwP4nqyul2xAGTKH_1kGvHUM3iLqRj_h8nuvuCYW9DzYI1ZCOVlscJwvrCsUttlf0tZILqvfd_5dZoRlqnUeV27RGA_cBfSNWOTaCiSfcqIr2TFh1ws5XcVeMiU33EfyiVsbvIvtBE1ADrKK9F6JGJ7Jpf3_W5kTl9_mZfA4rUaCxtIlTgjMe9nTN");'></div>
+</div>
+</section>
+<!-- Mission & Values Section -->
+<section class="py-16 sm:py-24 bg-gray-100 dark:bg-white/5 rounded-xl">
+<div class="px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-gray-900 dark:text-white text-3xl font-bold leading-tight tracking-tight sm:text-4xl">Our Mission &amp; Values</h2>
+<p class="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">The principles that guide every decision we make, from design to delivery.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="flex flex-col items-center text-center gap-4 rounded-lg p-6 bg-background-light dark:bg-background-dark border border-gray-200 dark:border-white/10">
+<span class="material-symbols-outlined text-4xl text-primary">diamond</span>
+<h3 class="text-gray-900 dark:text-white text-lg font-bold leading-tight">Quality Craftsmanship</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm font-normal leading-normal">Utilizing only the finest materials and time-honored techniques for superior quality.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-4 rounded-lg p-6 bg-background-light dark:bg-background-dark border border-gray-200 dark:border-white/10">
+<span class="material-symbols-outlined text-4xl text-primary">spa</span>
+<h3 class="text-gray-900 dark:text-white text-lg font-bold leading-tight">Sustainable Practices</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm font-normal leading-normal">A commitment to ethical sourcing and environmentally conscious production.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-4 rounded-lg p-6 bg-background-light dark:bg-background-dark border border-gray-200 dark:border-white/10">
+<span class="material-symbols-outlined text-4xl text-primary">schedule</span>
+<h3 class="text-gray-900 dark:text-white text-lg font-bold leading-tight">Timeless Style</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm font-normal leading-normal">Creating enduring designs that transcend fleeting trends for a lasting wardrobe.</p>
+</div>
+<div class="flex flex-col items-center text-center gap-4 rounded-lg p-6 bg-background-light dark:bg-background-dark border border-gray-200 dark:border-white/10">
+<span class="material-symbols-outlined text-4xl text-primary">favorite</span>
+<h3 class="text-gray-900 dark:text-white text-lg font-bold leading-tight">Customer Dedication</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm font-normal leading-normal">Placing your satisfaction at the heart of everything we do, ensuring a premium experience.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Statistics Section -->
+<section class="py-16 sm:py-24">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+<div class="flex flex-col items-center gap-2">
+<span class="text-primary text-5xl sm:text-6xl font-black">14+</span>
+<p class="text-gray-600 dark:text-gray-400 text-sm sm:text-base">Years in Business</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="text-primary text-5xl sm:text-6xl font-black">50k+</span>
+<p class="text-gray-600 dark:text-gray-400 text-sm sm:text-base">Happy Customers</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="text-primary text-5xl sm:text-6xl font-black">200k+</span>
+<p class="text-gray-600 dark:text-gray-400 text-sm sm:text-base">Garments Sold</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="text-primary text-5xl sm:text-6xl font-black">75+</span>
+<p class="text-gray-600 dark:text-gray-400 text-sm sm:text-base">Countries Shipped To</p>
+</div>
+</div>
+</section>
+<!-- Why Choose Us Section -->
+<section class="py-16 sm:py-24">
+<div class="text-center mb-12">
+<h2 class="text-gray-900 dark:text-white text-3xl font-bold leading-tight tracking-tight sm:text-4xl">Why Choose Us?</h2>
+<p class="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">Experience the LoMen difference with benefits designed for the modern gentleman.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex items-start gap-4 p-6 rounded-lg bg-gray-100 dark:bg-white/5">
+<span class="material-symbols-outlined text-3xl text-primary mt-1">workspace_premium</span>
+<div>
+<h3 class="text-gray-900 dark:text-white text-lg font-bold">Premium Quality Materials</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm mt-1">We source the finest fabrics from around the world to ensure unparalleled comfort and durability.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-6 rounded-lg bg-gray-100 dark:bg-white/5">
+<span class="material-symbols-outlined text-3xl text-primary mt-1">local_shipping</span>
+<div>
+<h3 class="text-gray-900 dark:text-white text-lg font-bold">Free Global Shipping</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm mt-1">Enjoy complimentary, carbon-neutral shipping on all orders, wherever you are in the world.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-6 rounded-lg bg-gray-100 dark:bg-white/5">
+<span class="material-symbols-outlined text-3xl text-primary mt-1">replay</span>
+<div>
+<h3 class="text-gray-900 dark:text-white text-lg font-bold">Easy Returns</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm mt-1">Our hassle-free return policy ensures you can shop with complete confidence and peace of mind.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-6 rounded-lg bg-gray-100 dark:bg-white/5">
+<span class="material-symbols-outlined text-3xl text-primary mt-1">style</span>
+<div>
+<h3 class="text-gray-900 dark:text-white text-lg font-bold">Expert Styling Advice</h3>
+<p class="text-gray-600 dark:text-gray-300 text-sm mt-1">Our dedicated style consultants are available to help you build your perfect wardrobe.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-16 sm:py-24 text-center bg-gray-100 dark:bg-white/5 rounded-xl">
+<div class="px-4">
+<h2 class="text-gray-900 dark:text-white text-3xl font-bold leading-tight tracking-tight sm:text-4xl">Join the LoMen Club</h2>
+<p class="text-gray-600 dark:text-gray-400 mt-4 max-w-2xl mx-auto">Be the first to know about new arrivals, exclusive offers, and the latest in modern tailoring.</p>
+<div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+<input class="w-full h-12 px-4 rounded-lg bg-background-light dark:bg-background-dark border border-gray-300 dark:border-white/20 focus:ring-2 focus:ring-primary focus:border-primary" placeholder="Enter your email address" type="email"/>
+<button class="flex w-full sm:w-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Subscribe</span>
+</button>
+</div>
+<div class="mt-10">
+<p class="text-gray-700 dark:text-gray-300 mb-4 font-semibold">Follow Our Journey</p>
+<div class="flex justify-center gap-6">
+<a class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.927 8.177c.058.463.07.935.07 1.417 0 4.285-3.263 9.23-9.23 9.23A9.155 9.155 0 012 19.583a6.593 6.593 0 00.94-3.132 9.167 9.167 0 01-6.072-3.328c.31.178.63.268.96.268.93 0 1.812-.313 2.5-1.092A3.242 3.242 0 015.34 9.182a3.178 3.178 0 001.464-.122A3.242 3.242 0 013.62 5.86v-.042a3.21 3.21 0 002.583 1.284 3.245 3.245 0 01-2.5-3.064 3.238 3.238 0 01.89-2.222 9.184 9.184 0 006.657 3.375.912.912 0 01-.077-.696 3.24 3.24 0 013.238-3.24c.93 0 1.77.393 2.36.984a6.54 6.54 0 002.08-.813 3.29 3.29 0 01-1.44 1.815 6.538 6.538 0 001.89-.52c-.22.63-.58 1.2-1.04 1.68z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LoMen - Classic Wool Suit</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#000000",
+              "background-light": "#f7f7f7",
+              "background-dark": "#191919",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-[#141414] dark:text-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-screen-xl flex-1">
+<!-- TopNavBar Component -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-neutral-200 dark:border-neutral-700 px-2 sm:px-4 md:px-10 py-3 mb-4">
+<div class="flex items-center gap-4">
+<div class="size-6 text-primary dark:text-white">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-primary dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">LoMen</h2>
+</div>
+<div class="hidden lg:flex flex-1 justify-center gap-8">
+<div class="flex items-center gap-9">
+<a class="text-primary dark:text-white text-sm font-medium leading-normal hover:opacity-70 transition-opacity" href="#">New In</a>
+<a class="text-primary dark:text-white text-sm font-medium leading-normal hover:opacity-70 transition-opacity" href="#">Collections</a>
+<a class="text-primary dark:text-white text-sm font-medium leading-normal hover:opacity-70 transition-opacity" href="#">Sale</a>
+<a class="text-primary dark:text-white text-sm font-medium leading-normal hover:opacity-70 transition-opacity" href="#">About</a>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-background-light dark:bg-background-dark text-primary dark:text-white border border-neutral-200 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="hidden sm:flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-background-light dark:bg-background-dark text-primary dark:text-white border border-neutral-200 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800">
+<span class="material-symbols-outlined">person</span>
+</button>
+<button class="hidden sm:flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-background-light dark:bg-background-dark text-primary dark:text-white border border-neutral-200 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800">
+<span class="material-symbols-outlined">bookmark_border</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-background-light dark:bg-background-dark text-primary dark:text-white border border-neutral-200 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</header>
+<!-- Breadcrumbs Component -->
+<div class="flex flex-wrap gap-2 p-4">
+<a class="text-neutral-500 dark:text-neutral-400 text-sm font-medium leading-normal hover:text-primary dark:hover:text-white" href="#">Home</a>
+<span class="text-neutral-500 dark:text-neutral-400 text-sm font-medium leading-normal">/</span>
+<a class="text-neutral-500 dark:text-neutral-400 text-sm font-medium leading-normal hover:text-primary dark:hover:text-white" href="#">Collections</a>
+<span class="text-neutral-500 dark:text-neutral-400 text-sm font-medium leading-normal">/</span>
+<a class="text-neutral-500 dark:text-neutral-400 text-sm font-medium leading-normal hover:text-primary dark:hover:text-white" href="#">Formal</a>
+<span class="text-neutral-500 dark:text-neutral-400 text-sm font-medium leading-normal">/</span>
+<span class="text-primary dark:text-white text-sm font-medium leading-normal">Classic Wool Suit</span>
+</div>
+<!-- Product Display Section -->
+<main class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-16 mt-6">
+<!-- Images Section (Left - 60%) -->
+<div class="lg:col-span-3">
+<div class="flex flex-col gap-4">
+<div class="w-full bg-center bg-no-repeat bg-cover aspect-square rounded-lg border border-neutral-200 dark:border-neutral-700" data-alt="Front view of a classic wool suit on a mannequin" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCq-_By-8Kc_LjBuG5uyYf9qmBHeuRtuozz5SJLlLcJX7QQBMRXaCKqyMgeZGI-Ll4IRz1bXebX3mYI0GZSwpraL-uUcJCRAGquz2vynomjHfLDaui9dvJd6tJS76oSg_1Sc1NWzxiZzGx1FZE1wsXkkFf0TfKyDlFS-rci_TwO6NGFYuDOQ2NcQXEDbzoxI3AqWXeVgQiaPxgnFo76zx78SLz8tTXoJuOpH_ybEmmFp5lHqNmaLJ4uQzNS3i0kT2Iji7W1iXMjwWi6");'></div>
+<div class="grid grid-cols-4 gap-4">
+<div class="w-full bg-center bg-no-repeat bg-cover aspect-square rounded-lg border-2 border-primary dark:border-white" data-alt="Detailed view of the suit's fabric" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCaelR7nFSA9s0_GwXtVEEW58U7srfbEhE_jc3jjKTwigHmHztvx9fjx1by_oVI7rJpSbEvNMsyG8n3ozTAUz_sfpvh7MKjXIdBwIxrZ7pkhEArgGP9bDOYyl6SWPDSX6qSvyS4w0igspenp04u61E8YMtsWxVEt8x3XEFkQvlEFCGDLxnvlvEX6aN7noYMN9r9iEFxdMjoViYsayOWOvO-nQHfQ0U3XZwmzu3loXWFD4jcWnSfBbw05B41fAUUCa7pBhuNMUZwWWxC");'></div>
+<div class="w-full bg-center bg-no-repeat bg-cover aspect-square rounded-lg border border-neutral-200 dark:border-neutral-700 opacity-70 hover:opacity-100 transition-opacity" data-alt="Side view of the suit" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDekW-EMZLrxuP2_oeYDwMG1ZccMaO6iDfYEaFyaeZ8BYKJ81r8Ak4fyUDRY5IKI6fqMkDOwLnJ-ww4pvTuYmcohJrT9DHb_CdOxXtEfi1Vvj-yrqQDY5ZVKLxG97IoSovrSqZNhiVwrRyHAnsnJHXYE-h_DdSSHT_EzIpWBU_1Ly8s7OuidqJYTRsTU9zEs1MOfcnnCedpbGLmDoncvoV0_x0ItHRspZtazBIQjMi-DYgngDSpZzMdiz2Q3cUwj4_TADs6k0WekZtT");'></div>
+<div class="w-full bg-center bg-no-repeat bg-cover aspect-square rounded-lg border border-neutral-200 dark:border-neutral-700 opacity-70 hover:opacity-100 transition-opacity" data-alt="Back view of the suit" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDlE2ApKbGBwLbShaRw6z5ik6q9CFBrKARBoNqo9YmM49KUtid61pGC-EfYlD6MzTm6Y6__kUdJGWz0Yp46aRPqn4umdbfoHWFh2jMtoEgDUyLxxMZiSapY-oCAD-rpBJz5l6fRJ5ST__oEAG1iTGmXWjvaIKUFsRh_AOkyGdF3cFwrez-MoHLVKEnedlRiZ9VV32wTeuTqo6aqHndK3fw7UpO_LsZ_cj2kyHNDFDGTuXYfVYjAI7JH1AInMQZQGkXmr7w0fO8GL88j");'></div>
+<div class="w-full bg-center bg-no-repeat bg-cover aspect-square rounded-lg border border-neutral-200 dark:border-neutral-700 opacity-70 hover:opacity-100 transition-opacity" data-alt="Close-up of the suit's lapel" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDw0yteychzpiCHu7G5-EjNO_YYJHJmLISV27_Q88QVEFJRS5pYxe8nZHKfaV6rkKVYNls1i6qw0zWJ61bu94Y7C8VyhMw5U1A3eU0e6yYBCGswdOhp2NlfIgsO3Srut_rjl7nxXnlX2JWwRYYTlzyvHPyPv6rKRCheYIA8BWUF7fD3BKPnimY1Nj5846aNek2DOefoW85Nwc0XfIckEKPreSjgAy6zRnRbkIUzSrXm9gMM2KiQ7gPizzITTtItpMQ3VCkESzpJqmDQ");'></div>
+</div>
+</div>
+</div>
+<!-- Product Details Section (Right - 40%) -->
+<div class="lg:col-span-2 flex flex-col pt-4">
+<!-- Headline & Meta -->
+<p class="text-neutral-500 dark:text-neutral-400 text-sm font-normal leading-normal">Formal Collection</p>
+<h1 class="text-primary dark:text-white tracking-tight text-4xl font-bold leading-tight pt-2 pb-3">Classic Wool Suit</h1>
+<!-- Rating -->
+<div class="flex items-center gap-2 mb-4">
+<div class="flex text-primary dark:text-white">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<span class="text-neutral-500 dark:text-neutral-400 text-sm">(121 Reviews)</span>
+</div>
+<!-- Price -->
+<p class="text-primary dark:text-white text-3xl font-bold mb-4">$799.00</p>
+<!-- Short Description -->
+<p class="text-neutral-600 dark:text-neutral-300 text-base leading-relaxed mb-6">Meticulously crafted from 100% premium Italian wool, this suit offers a modern silhouette with timeless appeal. Perfect for business engagements and formal events.</p>
+<!-- Color Selector -->
+<div class="mb-6">
+<p class="text-sm font-bold mb-2 text-primary dark:text-white">COLOR: <span class="font-medium text-neutral-600 dark:text-neutral-300">Charcoal Grey</span></p>
+<div class="flex gap-3">
+<button class="size-8 rounded-full bg-gray-800 ring-2 ring-offset-2 ring-primary dark:ring-white ring-offset-background-light dark:ring-offset-background-dark"></button>
+<button class="size-8 rounded-full bg-blue-900 hover:ring-2 hover:ring-primary dark:hover:ring-white"></button>
+<button class="size-8 rounded-full bg-black hover:ring-2 hover:ring-primary dark:hover:ring-white"></button>
+</div>
+</div>
+<!-- Size Selector -->
+<div class="mb-6">
+<div class="flex justify-between items-center mb-2">
+<p class="text-sm font-bold text-primary dark:text-white">SIZE</p>
+<a class="text-sm font-medium text-neutral-500 dark:text-neutral-400 underline" href="#">Size Guide</a>
+</div>
+<div class="grid grid-cols-5 gap-2">
+<button class="h-12 border border-neutral-300 dark:border-neutral-600 rounded-lg hover:border-primary dark:hover:border-white transition-colors">S</button>
+<button class="h-12 border border-neutral-300 dark:border-neutral-600 rounded-lg bg-primary text-white border-primary dark:border-white">M</button>
+<button class="h-12 border border-neutral-300 dark:border-neutral-600 rounded-lg hover:border-primary dark:hover:border-white transition-colors">L</button>
+<button class="h-12 border border-neutral-300 dark:border-neutral-600 rounded-lg hover:border-primary dark:hover:border-white transition-colors">XL</button>
+<button class="h-12 border border-neutral-300 dark:border-neutral-600 rounded-lg hover:border-primary dark:hover:border-white transition-colors">XXL</button>
+</div>
+</div>
+<!-- Quantity & Actions -->
+<div class="flex gap-4 mb-6">
+<div class="flex items-center border border-neutral-300 dark:border-neutral-600 rounded-lg">
+<button class="px-4 py-3 text-neutral-500 dark:text-neutral-400 hover:text-primary dark:hover:text-white">-</button>
+<span class="px-4 text-primary dark:text-white font-bold">1</span>
+<button class="px-4 py-3 text-neutral-500 dark:text-neutral-400 hover:text-primary dark:hover:text-white">+</button>
+</div>
+<button class="flex-1 bg-primary text-white font-bold py-3 rounded-lg hover:bg-neutral-800 dark:hover:bg-neutral-200 dark:hover:text-primary transition-colors">Add to Cart</button>
+<button class="w-14 h-auto border border-neutral-300 dark:border-neutral-600 rounded-lg flex items-center justify-center hover:border-primary dark:hover:border-white">
+<span class="material-symbols-outlined">favorite_border</span>
+</button>
+</div>
+<!-- Availability -->
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-500" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<p class="text-sm text-green-600 dark:text-green-400 font-medium">In Stock - Ships within 24 hours</p>
+</div>
+</div>
+</main>
+<!-- Product Details Tabs -->
+<section class="mt-16">
+<div class="border-b border-neutral-200 dark:border-neutral-700">
+<nav class="flex gap-8 -mb-px">
+<button class="py-4 px-1 border-b-2 border-primary text-primary font-bold">Description</button>
+<button class="py-4 px-1 border-b-2 border-transparent text-neutral-500 hover:text-primary hover:border-neutral-300 dark:hover:border-neutral-600 dark:text-neutral-400 dark:hover:text-white">Specifications</button>
+<button class="py-4 px-1 border-b-2 border-transparent text-neutral-500 hover:text-primary hover:border-neutral-300 dark:hover:border-neutral-600 dark:text-neutral-400 dark:hover:text-white">Shipping &amp; Returns</button>
+</nav>
+</div>
+<div class="py-8 text-neutral-600 dark:text-neutral-300 leading-relaxed space-y-4">
+<p>Discover the pinnacle of tailoring with the LoMen Classic Wool Suit. This garment is not just clothing; it's a statement of intent, designed for the man who commands respect. The slim-fit cut ensures a contemporary profile, while the premium wool fabric provides exceptional comfort and breathability.</p>
+<ul class="space-y-2 list-inside">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary dark:text-white text-base mr-2 mt-1">check</span>
+<span>100% Super 120s Italian Wool for a luxurious feel and drape.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary dark:text-white text-base mr-2 mt-1">check</span>
+<span>Modern slim-fit design that contours the body for a sharp silhouette.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary dark:text-white text-base mr-2 mt-1">check</span>
+<span>Fully-lined, single-breasted jacket with notched lapels and dual vents.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-primary dark:text-white text-base mr-2 mt-1">check</span>
+<span>Flat-front trousers with a streamlined look, delivered unhemmed for custom tailoring.</span>
+</li>
+</ul>
+</div>
+</section>
+<!-- Customer Reviews Section -->
+<section class="mt-16">
+<h2 class="text-2xl font-bold text-primary dark:text-white mb-6">Customer Reviews</h2>
+<div class="bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg p-6 flex flex-col md:flex-row items-start md:items-center gap-6">
+<div class="flex flex-col items-center gap-1">
+<p class="text-4xl font-bold text-primary dark:text-white">4.8</p>
+<div class="flex text-primary dark:text-white">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<p class="text-sm text-neutral-500 dark:text-neutral-400">Based on 121 reviews</p>
+</div>
+<div class="w-full flex-1">
+<!-- Rating bars would be implemented here -->
+<p class="text-sm text-neutral-600 dark:text-neutral-300">Rating distribution graph placeholder.</p>
+</div>
+<button class="w-full md:w-auto whitespace-nowrap bg-background-light dark:bg-background-dark border border-neutral-300 dark:border-neutral-600 text-primary dark:text-white font-bold py-3 px-6 rounded-lg hover:border-primary dark:hover:border-white transition-colors">Write a Review</button>
+</div>
+<!-- Individual Review -->
+<div class="border-b border-neutral-200 dark:border-neutral-800 py-6">
+<div class="flex items-center mb-2">
+<div class="flex text-primary dark:text-white">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-bold text-primary dark:text-white">Exceptional Quality</p>
+<p class="text-neutral-600 dark:text-neutral-300 mt-2">The fabric is incredible and the fit is perfect right out of the box. Feels and looks much more expensive than it is. Highly recommend.</p>
+<p class="text-sm text-neutral-500 dark:text-neutral-400 mt-3">John D. on March 15, 2024</p>
+</div>
+</section>
+<!-- You May Also Like Section -->
+<section class="mt-20">
+<h2 class="text-2xl font-bold text-primary dark:text-white mb-6">You May Also Like</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+<!-- Product Card 1 -->
+<div class="flex flex-col group">
+<div class="bg-center bg-no-repeat bg-cover aspect-square rounded-lg border border-neutral-200 dark:border-neutral-700 mb-3" data-alt="A man wearing a formal leather belt." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDc5CcrcIE3OfLyixIUdN8bXEmage2Lo0K4Bp7mbqmvESORRYi4GiiuQnbsRjPbiBOk_Hbwd1Cvw0AU7jswlLGr5Do-7ZfUetb0eE4jjzIce9koxXuWyNPQngDg-ucZA7qlnev7D4AhzBXCMrpYhbKfkFkwQyGJN9HXsn1scnSIgan8BIhQgNnKd_bldU5I29rgwXNR3qD40sfj2Mv9FQI25JoFSgxeGP0I2e9NTDMhM4lqOGo_ZDZvPV-xP68wb1bag-QYouBcq1V2");'></div>
+<h3 class="font-bold text-primary dark:text-white">Italian Leather Belt</h3>
+<p class="text-neutral-500 dark:text-neutral-400">$120.00</p>
+</div>
+<!-- Product Card 2 -->
+<div class="flex flex-col group">
+<div class="bg-center bg-no-repeat bg-cover aspect-square rounded-lg border border-neutral-200 dark:border-neutral-700 mb-3" data-alt="A pair of classic leather oxford shoes." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAu9DQRJ-Q-c3KeRmWZTN9jZyl5PTqzIViWP1mI7drz7mccHb11jxmh5pqawiwbclwZ-7vmPtM2VZGMACFpV7_cYRQhofFHMCc32VUksD-39jqXeD6QMXqeJNsuOTxUDymsnqMzqPEpuouYoaBW4LtBJHEwDCQ48pqwk5aloh4Kd2cfFlEMlE4l-IykziFyZHjnbgho4JmDheEoi8lVxOmeob2p3HSi5YE2vTL5MHSTGuAt2OJCpGLKIuDTNSqbFOPdA9qLyIpp-pB-");'></div>
+<h3 class="font-bold text-primary dark:text-white">Oxford Dress Shoes</h3>
+<p class="text-neutral-500 dark:text-neutral-400">$350.00</p>
+</div>
+<!-- Product Card 3 -->
+<div class="flex flex-col group">
+<div class="bg-center bg-no-repeat bg-cover aspect-square rounded-lg border border-neutral-200 dark:border-neutral-700 mb-3" data-alt="A white formal dress shirt." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAF29ni980L89NC4qWMre11w8lRGelOGUD2Di7KHk1AP1TeOQdXceszbkxtuYZ1DohoWERpETBU5Om0mDu-Q-XUZ6TyPU09c5z974wcDkU-RTn3o_bNFp2FO1FI2hqhmcJ0WUdXG7ZBZVeQ4JCuFW28do095TviBeca1L-BmAH2XwCFHPWsT8WVu8glW2ZOk2sPyVCfRldMk_PKgdrGYoVtKRj-m4cUjDi3b3OTHBn-J4idhfFpr-gniKJL1KMKH6OUxOj2rTXIW5Ul");'></div>
+<h3 class="font-bold text-primary dark:text-white">Crisp Cotton Shirt</h3>
+<p class="text-neutral-500 dark:text-neutral-400">$95.00</p>
+</div>
+<!-- Product Card 4 -->
+<div class="flex flex-col group">
+<div class="bg-center bg-no-repeat bg-cover aspect-square rounded-lg border border-neutral-200 dark:border-neutral-700 mb-3" data-alt="A silk tie with a subtle pattern." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDFkSS1aL-datze2-FhHr6fGo4UAuVWyZx7-jIWu9TZq_kSjGnQcDEipHIwBSpAetI08iw_tbE9HNUT5Smiw9-Xzj8lVFxo7jyJWGTjIyhSHDiBooWnLqULGCNTMpTj4aGlOkHaEYVkkrOoWtq3vORYVPrAAcCOwrn7c5N6uUsxXGoxoLCI3WsR13BpE3WSscgxyiq69Vlre_eA32yGNbXiWsfV7qDZ4P5PUXcSi66UM0WfDrhwrbG-0Na4dyEAKFu1Af3il9u1pc2h");'></div>
+<h3 class="font-bold text-primary dark:text-white">Silk Patterned Tie</h3>
+<p class="text-neutral-500 dark:text-neutral-400">$75.00</p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+</body></html>

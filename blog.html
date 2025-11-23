@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LoMen - The Journal</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0..200" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#0f49bd",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101622",
+            },
+            fontFamily: {
+              "display": ["Newsreader", "serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-800 px-4 sm:px-10 py-3">
+<div class="flex items-center gap-4 text-gray-900 dark:text-gray-100">
+<div class="size-4">
+<svg class="text-gray-900 dark:text-gray-100" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-gray-900 dark:text-gray-100 text-lg font-bold leading-tight tracking-[-0.015em]">LoMen</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="hidden md:flex items-center gap-9">
+<a class="text-gray-900 dark:text-gray-100 text-sm font-medium leading-normal" href="#">Home</a>
+<a class="text-gray-900 dark:text-gray-100 text-sm font-medium leading-normal" href="#">Shop</a>
+<a class="text-gray-900 dark:text-gray-100 text-sm font-medium leading-normal" href="#">Collections</a>
+<a class="text-primary text-sm font-bold leading-normal" href="#">Blog</a>
+<a class="text-gray-900 dark:text-gray-100 text-sm font-medium leading-normal" href="#">About</a>
+</div>
+<div class="flex gap-2">
+<button class="hidden sm:flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Sign In</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-200/50 dark:bg-gray-800/50 text-gray-900 dark:text-gray-100 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-200/50 dark:bg-gray-800/50 text-gray-900 dark:text-gray-100 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+<button class="flex sm:hidden max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-gray-200/50 dark:bg-gray-800/50 text-gray-900 dark:text-gray-100 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="mt-5">
+<!-- HeroSection -->
+<div class="@container">
+<div class="@[480px]:p-4">
+<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-10 @[480px]:px-10" data-alt="A man in a black and white trench coat walking down a city street." style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDjd193ewYapCTeXrjh2kfyPEmoAvQPFPMNpMPqq51p91IepLCbPshzNysuknc3GQhb84qITsCJAKjMXuUoFn29fnRZBhOlr5j1e55IFL-qxG9qSkzebSq0EaJEo3EZrssyJMoCodAxg9kh9w5SFiFKuNZcKYA4Rbd2gNuMdmgDBwve-IIhqyJX2EU1M7FZlc0do4wQp_V5Tut-CO-0gN-nq-jaG4XV-N7RTyCDUGs3jtt8RObevjkVRi_K3kuP-fZK4u3UQYV-UgFt");'>
+<div class="flex flex-col gap-2 text-left">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                            The Timeless Appeal of the Monochrome Wardrobe
+                                        </h1>
+<h2 class="text-gray-200 text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                                            An exploration into the power of black and white in modern menswear, and how to master the art of sophisticated simplicity.
+                                        </h2>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+<span class="truncate">Read More</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Chips -->
+<div class="flex gap-3 p-3 overflow-x-auto whitespace-nowrap scrollbar-hide my-4">
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-primary/20 text-primary px-4">
+<p class="text-sm font-medium leading-normal">All</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-gray-200/50 dark:bg-gray-800/50 hover:bg-gray-300/50 dark:hover:bg-gray-700/50 px-4">
+<p class="text-gray-900 dark:text-gray-100 text-sm font-medium leading-normal">Style Tips</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-gray-200/50 dark:bg-gray-800/50 hover:bg-gray-300/50 dark:hover:bg-gray-700/50 px-4">
+<p class="text-gray-900 dark:text-gray-100 text-sm font-medium leading-normal">Trend Reports</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-gray-200/50 dark:bg-gray-800/50 hover:bg-gray-300/50 dark:hover:bg-gray-700/50 px-4">
+<p class="text-gray-900 dark:text-gray-100 text-sm font-medium leading-normal">Interviews</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-gray-200/50 dark:bg-gray-800/50 hover:bg-gray-300/50 dark:hover:bg-gray-700/50 px-4">
+<p class="text-gray-900 dark:text-gray-100 text-sm font-medium leading-normal">Lookbooks</p>
+</div>
+<div class="flex h-8 shrink-0 cursor-pointer items-center justify-center gap-x-2 rounded-full bg-gray-200/50 dark:bg-gray-800/50 hover:bg-gray-300/50 dark:hover:bg-gray-700/50 px-4">
+<p class="text-gray-900 dark:text-gray-100 text-sm font-medium leading-normal">Grooming</p>
+</div>
+</div>
+<!-- ImageGrid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="Black and white photo of a man wearing a tailored suit." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA32fI7TGhtKEFZNhzGrAPyNDnkPVF1CAPgYjbtddrS93VFtW4qzk14WwuemT7O9dIqHHXzZkFSb6TaKywOw0VmptLUkLzM6z8we-yeNvuFIl88tQN7Fx474YNOgUnjKG5jkB1U9sKsurAUOBtpTHX1KxGj7l6QQoeN2SP7U17OMqGSvZoHy74QYc5w2x_3e9AOGzjY1YNyxHMsz7b8z2DI3qmwAmgLoRs9YmQrLJTZPPOaH1iZ-LGQuR2uziua5n7gyqO5M1Ajk8Hh");'></div>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-primary text-sm font-normal leading-normal">Style Tips</p>
+<p class="text-gray-900 dark:text-gray-100 text-base font-bold leading-normal">Five Essential Suits for the Modern Gentleman</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">By John Doe • Aug 24, 2023 • 5 min read</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="Close up shot of a fashion designer sketching." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBgdDmmiNESI_xax4Q893WBEYOdr2tIpCyfTLeGr4KxuxZV-GXqe-QWLFt6-juNr75JziYNA679sxTUHSekxvM5rK0G-y9GsiTwk_KlvdgxsW-5W7DCkagPL4IsbLrKb6EnDkkrWx2t-LWMoEgiaBiMJq_bgIOFQLCrS4S7GrxrltmB2aaLS99EaJuxNPB8VDzpDjg5EqIobYwRm6Ydpa5tLzu1Zjjo3EeiRiVkNXdtg32Bk9xCkv6PUDJlOOzs9sBu2s7-QoCdHX1T");'></div>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-primary text-sm font-normal leading-normal">Interviews</p>
+<p class="text-gray-900 dark:text-gray-100 text-base font-bold leading-normal">An Interview with Designer Alex Creed</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">By Jane Smith • Aug 22, 2023 • 8 min read</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="A male model posing in an autumn collection outfit." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBt8IKlXaqF2S0UmNvhxtnNdMHDWM8DQo0CEJWlr5SjeQzKMuYP0IlenHLQy-buG2HLHgd5YEo3GdhvwlAkODV1sAwhqgYzXUGzklYYZ_wTZs48HzJqRjC7cNGQdqE691phtVeoEDt6lXmttfaRfQj4C79bd0qAwtsqcWxwiNJve2BNqyieGIuIFceyj32grAxeodX_1t-ehLw6vmnBcDEcbK50xu0APkblNSU5k8luf5oO_a4ZsbqEfCKUjwsX97wzatqGFsDLFVs-");'></div>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-primary text-sm font-normal leading-normal">Lookbooks</p>
+<p class="text-gray-900 dark:text-gray-100 text-base font-bold leading-normal">Autumn/Winter '24: A Lookbook</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">By LoMen Staff • Aug 20, 2023 • 3 min read</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="Man layering a jacket over a sweater in black and white." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA74S69zIP4daKXEfbNDsIILL4QZglHfw--Yfh4BODEyPWqdBFIBsj_GrlRW12l5zIWCVTm5YWP4z6q_TJk2ouvqiiHbZSfsOHO5RRmk1c8RJd7sZO7U7OTlmelRA0UerxaG2vR2Hwyj8sSDwh8wofZ2TRfGtlkuvJHQ5OR4TcEjtakZO0JgUvRm4S1ViGuR6bke1ZV2Hst6gUfcL5KGy-fR6VCc7bQXzwuisAWCoa9sOMEPhCGWoyzPwI4IgK-DHF_qbOjus4Xuv0c");'></div>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-primary text-sm font-normal leading-normal">Style Tips</p>
+<p class="text-gray-900 dark:text-gray-100 text-base font-bold leading-normal">The Art of Layering: A Guide</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">By John Doe • Aug 18, 2023 • 6 min read</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="A man in a tuxedo at a formal event." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCUVjAXaOnTF8ODUgXRJh6R7oPE_PQzxzGchwnahVxAFC959J8eY0SrBLFu0MUsuBy9UyffO4njL1PeVuZJIgVrmVblv-F18VPiz2Kk8OApXPPx-lmcdlRUGSOID2YrxmTfqeCn4Y8X-U1fw66tWtB91c-f4Kl7IHn27IFFhhDNM-BYQrazh2Uz-hfQYHMpzs_mrXcgZocwBxPWp-dLE401_TKibP17h3kdXdjghr-tL7B68Fmv_IZDqO4haSPrHSMoxZlOX7fHm9wf");'></div>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-primary text-sm font-normal leading-normal">Style Tips</p>
+<p class="text-gray-900 dark:text-gray-100 text-base font-bold leading-normal">Decoding Dress Codes: From Black Tie to Smart Casual</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">By Mark Allan • Aug 15, 2023 • 7 min read</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 group">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="A collection of men's grooming products on a dark surface." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBLWzgiZ5E-D1G7sXtajCipevDTReFV1QDxm4wI11lYRUnv9GdETp2QL08q-yau4tT6__ny4hlFGYgRxQQn6-aIMplPVHoI5SXGw8-nvObtAjQVYNU5NvbmFCb-P-X2wx8Jq_cCI7o5LznkwUofP9J-k4v5k3VkK2e6viy9cHf_n64GKeGCsgjjPE5acdBOsrrdUi-PGDN6yuBG4OjfQhjLUx-EBUpgsCiuNF8XKLfLwdOWCmKMKk-MAZjlICyoE3sJDNWM0c7EIlHI");'></div>
+</div>
+<div class="flex flex-col gap-1">
+<p class="text-primary text-sm font-normal leading-normal">Grooming</p>
+<p class="text-gray-900 dark:text-gray-100 text-base font-bold leading-normal">Grooming Essentials Every Man Should Own</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">By Chris Lee • Aug 12, 2023 • 4 min read</p>
+</div>
+</div>
+</div>
+<!-- SingleButton -->
+<div class="flex px-4 py-8 justify-center">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-gray-200/50 dark:bg-gray-800/50 text-gray-900 dark:text-gray-100 text-base font-bold leading-normal tracking-[0.015em] hover:bg-gray-300/50 dark:hover:bg-gray-700/50">
+<span class="truncate">Load More Articles</span>
+</button>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>

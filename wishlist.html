@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LoMen - My Wishlist</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#bd0f2c",
+              "background-light": "#f8f6f6",
+              "background-dark": "#111111",
+              "foreground-light": "#111111",
+              "foreground-dark": "#f8f6f6",
+              "card-light": "#ffffff",
+              "card-dark": "#1a1a1a",
+              "border-light": "#e5e7eb",
+              "border-dark": "#374151",
+              "secondary-text-light": "#6b7280",
+              "secondary-text-dark": "#9ca3af",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.25rem",
+              "lg": "0.5rem",
+              "xl": "0.75rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-foreground-light dark:text-foreground-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 border-b border-border-light dark:border-border-dark bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex h-16 items-center justify-between">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-2 text-xl font-bold" href="#">
+<span class="material-symbols-outlined text-primary text-3xl">diamond</span>
+<span>LoMen</span>
+</a>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium hover:text-primary" href="#">New Arrivals</a>
+<a class="text-sm font-medium hover:text-primary" href="#">Clothing</a>
+<a class="text-sm font-medium hover:text-primary" href="#">Shoes</a>
+<a class="text-sm font-medium hover:text-primary" href="#">Accessories</a>
+</nav>
+</div>
+<div class="flex items-center justify-end gap-4">
+<div class="relative hidden md:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-secondary-text-light dark:text-secondary-text-dark">search</span>
+<input class="form-input w-full min-w-48 rounded-lg border-border-light bg-background-light dark:border-border-dark dark:bg-card-dark pl-10 pr-4 py-2 text-sm focus:border-primary focus:ring-primary" placeholder="Search..." type="search"/>
+</div>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg hover:bg-black/5 dark:hover:bg-white/5">
+<span class="material-symbols-outlined text-2xl">favorite_border</span>
+</button>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg hover:bg-black/5 dark:hover:bg-white/5">
+<span class="material-symbols-outlined text-2xl">shopping_bag</span>
+</button>
+<div class="h-10 w-10 rounded-full bg-cover bg-center" data-alt="User profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDLW2aUXPcSwNYgkNvTVCZUwFhf2D-9DkKJ5IUWUqBC_udOUPIDp4jWWJiTN6SG-BfjhJWoPOUgwg9Fz9_Sq96d6cNaIkI8a75XDKfAjr41CgfOhIjdRlP1EqrNgA9iawLh-G62p2Q8N3T8fq595yn4Q8buKYVazBYRI6c-cbK5HTWwXz3JLN9wVbWlNg6T-4jeQZswNEf2VT1AquBgZGGXHA-7eb_k7tEsGK1r7XTV-T_y7P4VQEYDAItvG5A0zAhRfCBmZ7zdUTKV");'></div>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+<!-- Breadcrumbs -->
+<div class="flex items-center gap-2 text-sm text-secondary-text-light dark:text-secondary-text-dark mb-4">
+<a class="hover:text-primary" href="#">Home</a>
+<span>/</span>
+<span class="font-medium text-foreground-light dark:text-foreground-dark">Wishlist</span>
+</div>
+<!-- Page Header -->
+<div class="flex flex-wrap items-center justify-between gap-4 border-b border-border-light dark:border-border-dark pb-6 mb-6">
+<div class="flex flex-col gap-1">
+<h1 class="text-3xl md:text-4xl font-bold tracking-tight">My Wishlist</h1>
+<p class="text-secondary-text-light dark:text-secondary-text-dark">12 items in your wishlist</p>
+</div>
+<button class="flex h-10 cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg bg-foreground-light px-4 text-sm font-bold text-background-light dark:bg-foreground-dark dark:text-background-dark">
+<span class="material-symbols-outlined text-xl">ios_share</span>
+<span class="truncate">Share Wishlist</span>
+</button>
+</div>
+<!-- Toolbar -->
+<div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+<div class="flex items-center gap-2">
+<label class="flex items-center gap-2 p-2 rounded-lg cursor-pointer hover:bg-black/5 dark:hover:bg-white/5">
+<input class="form-checkbox h-5 w-5 rounded border-border-light dark:border-border-dark bg-background-light dark:bg-card-dark text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-sm font-medium select-none">Select All</span>
+</label>
+<button class="flex h-10 w-10 items-center justify-center rounded-lg text-secondary-text-light hover:text-primary dark:text-secondary-text-dark dark:hover:text-primary">
+<span class="material-symbols-outlined">delete</span>
+</button>
+<button class="flex h-10 w-10 items-center justify-center rounded-lg text-secondary-text-light hover:text-primary dark:text-secondary-text-dark dark:hover:text-primary">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+</div>
+<div class="flex items-center gap-4">
+<!-- Sort By Dropdown -->
+<div class="relative">
+<button class="flex h-10 cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark px-4 text-sm font-medium">
+<span class="truncate">Sort by: Date Added</span>
+<span class="material-symbols-outlined text-xl">expand_more</span>
+</button>
+</div>
+<!-- Segmented View Toggle -->
+<div class="hidden md:flex h-10 items-center justify-center rounded-lg bg-black/5 dark:bg-white/5 p-1">
+<label class="flex h-full cursor-pointer items-center justify-center overflow-hidden rounded-md px-3 has-[:checked]:bg-card-light has-[:checked]:dark:bg-card-dark has-[:checked]:shadow-sm">
+<span class="material-symbols-outlined text-foreground-light dark:text-foreground-dark">grid_view</span>
+<input checked="" class="invisible w-0" name="view-toggle" type="radio" value="Grid View"/>
+</label>
+<label class="flex h-full cursor-pointer items-center justify-center overflow-hidden rounded-md px-3 has-[:checked]:bg-card-light has-[:checked]:dark:bg-card-dark has-[:checked]:shadow-sm">
+<span class="material-symbols-outlined text-secondary-text-light dark:text-secondary-text-dark">view_list</span>
+<input class="invisible w-0" name="view-toggle" type="radio" value="List View"/>
+</label>
+</div>
+</div>
+</div>
+<!-- Products Grid -->
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+<!-- Product Card 1 -->
+<div class="group relative flex flex-col overflow-hidden rounded-xl border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark">
+<div class="absolute top-2 left-2 z-10">
+<input class="form-checkbox h-5 w-5 rounded border-border-light dark:border-border-dark bg-background-light dark:bg-card-dark text-primary focus:ring-primary" type="checkbox"/>
+</div>
+<button class="absolute top-2 right-2 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-background-light/50 dark:bg-background-dark/50 backdrop-blur-sm hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+<div class="aspect-[3/4] overflow-hidden">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Classic Black Leather Jacket" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuARA1OI86qCeytPJ22SakeY0wlviNI8FWaNDJ2_zFAfgahWklnOXvqfEN9ddNLrUYSS3Pgt7NegMuqm2LT1sudmMzLlA3eY1CBfd3t5HN6hjVmsvhvpjHoV_BulyIcNR7Hc3w1H0xN29vQpqkbgRH2T2RfRBCTLjUtSVab4jOswgEca-gyjOlz0jmDUVpB8OZLjFaZZUdxdwsWwXLQLkrmYfbIJWRcM3-oSFESE0--ktOTsFI4_SCpBVYorOkDn29Al6NM-rorJcvU-");'></div>
+</div>
+<div class="flex flex-1 flex-col p-4">
+<h3 class="font-bold text-lg leading-tight"><a class="hover:underline" href="#">Classic Leather Jacket</a></h3>
+<p class="mt-1 text-base font-semibold">$249.99</p>
+<div class="mt-4 flex flex-1 flex-col justify-end gap-2">
+<select class="form-select w-full rounded-lg border-border-light bg-background-light py-2 text-sm focus:border-primary focus:ring-primary dark:border-border-dark dark:bg-background-dark">
+<option>Select Size</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+<option>XL</option>
+</select>
+<button class="flex h-10 w-full items-center justify-center rounded-lg bg-foreground-light px-4 text-sm font-bold text-background-light dark:bg-foreground-dark dark:text-background-dark">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 (Out of Stock) -->
+<div class="group relative flex flex-col overflow-hidden rounded-xl border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark">
+<div class="absolute top-2 left-2 z-10">
+<input class="form-checkbox h-5 w-5 rounded border-border-light dark:border-border-dark bg-background-light dark:bg-card-dark text-primary focus:ring-primary" type="checkbox"/>
+</div>
+<button class="absolute top-2 right-2 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-background-light/50 dark:bg-background-dark/50 backdrop-blur-sm hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+<div class="absolute top-2 left-2 z-10 mt-10">
+<span class="rounded bg-red-600 px-2 py-1 text-xs font-bold text-white">Out of Stock</span>
+</div>
+<div class="aspect-[3/4] overflow-hidden">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Slim Fit Chinos" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCUm4t618gsO1-A3CvpPRjFGjmx368qXBKT6rvnGdBE_7bMZ8yZh9M0r6WiFyqVEy6fCyAoo83qD710rJ7EexcWqXglXiVQH_DqokXwfZfs_Ko2LBaMTx3bWAS8wgbplOtZfQydldFpWXX5s6z99nzQnStCnjiHqo9bvs0jb9DW3movbOiLl6tuccBVeVhX7170r0tfxErqVpUytFrZeSRxwCoJUZ8GZTkxCA0IbL3Isgu7YN-JYomYL-fS4hSTBUqi9rd2lNy6Untv");'></div>
+</div>
+<div class="flex flex-1 flex-col p-4">
+<h3 class="font-bold text-lg leading-tight"><a class="hover:underline" href="#">Slim Fit Chinos</a></h3>
+<p class="mt-1 text-base font-semibold">$79.00</p>
+<div class="mt-4 flex flex-1 flex-col justify-end gap-2">
+<select class="form-select w-full cursor-not-allowed rounded-lg border-border-light bg-background-light py-2 text-sm focus:border-primary focus:ring-primary dark:border-border-dark dark:bg-background-dark" disabled="">
+<option>Select Size</option>
+</select>
+<button class="flex h-10 w-full items-center justify-center rounded-lg border border-border-light bg-transparent px-4 text-sm font-bold text-foreground-light dark:border-border-dark dark:text-foreground-dark">Notify Me</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 (Sale) -->
+<div class="group relative flex flex-col overflow-hidden rounded-xl border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark">
+<div class="absolute top-2 left-2 z-10">
+<input class="form-checkbox h-5 w-5 rounded border-border-light dark:border-border-dark bg-background-light dark:bg-card-dark text-primary focus:ring-primary" type="checkbox"/>
+</div>
+<button class="absolute top-2 right-2 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-background-light/50 dark:bg-background-dark/50 backdrop-blur-sm hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+<div class="aspect-[3/4] overflow-hidden">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Minimalist White Sneakers" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDOHSoYizxHkJSEesVDWaZ1clqqgV928rLLhkitKtWZJrdaTY86i8lstZ1G7gU-e3Jb6lHG-CFdrJu1Eb-lHBFoh5Fvr_ETRUUHAMDOEpww42tn46qkrDEY2wTQV0O2lIB6NqLwQ-Xq9YTle9p7ncXMFf2GOpHoOpOielzDsHCV_oKibLb8KdvzXJqPgfKQe53_VgQYERYFzsTFEbdtL1Sxhi6Wp-VmolT17Uek1RfcHJq7aDfNaa6DuAKJePWpZdCiJEl5GPITlwv2");'></div>
+</div>
+<div class="flex flex-1 flex-col p-4">
+<h3 class="font-bold text-lg leading-tight"><a class="hover:underline" href="#">Minimalist Sneakers</a></h3>
+<p class="mt-1 text-base font-semibold">
+<span class="text-primary">$99.99</span>
+<span class="ml-2 text-secondary-text-light line-through dark:text-secondary-text-dark">$129.99</span>
+</p>
+<div class="mt-4 flex flex-1 flex-col justify-end gap-2">
+<select class="form-select w-full rounded-lg border-border-light bg-background-light py-2 text-sm focus:border-primary focus:ring-primary dark:border-border-dark dark:bg-background-dark">
+<option>Select Size</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+</select>
+<button class="flex h-10 w-full items-center justify-center rounded-lg bg-foreground-light px-4 text-sm font-bold text-background-light dark:bg-foreground-dark dark:text-background-dark">Add to Cart</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group relative flex flex-col overflow-hidden rounded-xl border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark">
+<div class="absolute top-2 left-2 z-10">
+<input class="form-checkbox h-5 w-5 rounded border-border-light dark:border-border-dark bg-background-light dark:bg-card-dark text-primary focus:ring-primary" type="checkbox"/>
+</div>
+<button class="absolute top-2 right-2 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-background-light/50 dark:bg-background-dark/50 backdrop-blur-sm hover:bg-primary hover:text-white">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+<div class="aspect-[3/4] overflow-hidden">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Wool Blend Overcoat" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_h56YxzZPTIugPO_NgxRe2sloxTwpNZLUUd97J0dWDH7bq2LRquLfIskASdYilPXg3DXZaouGB2kwlHMLDw1evlw63BoKdzMWxmvcwKWpOyeATn3eCJh0y9Idiz-eFITOz_TBv0cW1kzSR4cKCQ2qAh1sOUphO5YArZRokRe8CcBGCFVaN83PGugDy55eT5aBHQbyGA8qJgLAELtYHwPmkOmXpXQGhlQFHAIJf6TsOivpF6VCdAC0z7CmUSO1SaXlz-vKJOV00f7-");'></div>
+</div>
+<div class="flex flex-1 flex-col p-4">
+<h3 class="font-bold text-lg leading-tight"><a class="hover:underline" href="#">Wool Blend Overcoat</a></h3>
+<p class="mt-1 text-base font-semibold">$350.00</p>
+<div class="mt-4 flex flex-1 flex-col justify-end gap-2">
+<select class="form-select w-full rounded-lg border-border-light bg-background-light py-2 text-sm focus:border-primary focus:ring-primary dark:border-border-dark dark:bg-background-dark">
+<option>Select Size</option>
+<option>M</option>
+<option>L</option>
+</select>
+<button class="flex h-10 w-full items-center justify-center rounded-lg bg-foreground-light px-4 text-sm font-bold text-background-light dark:bg-foreground-dark dark:text-background-dark">Add to Cart</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty Wishlist State -->
+<!-- 
+                <div class="flex flex-col items-center justify-center rounded-lg border-2 border-dashed border-border-light dark:border-border-dark py-24 text-center">
+                    <span class="material-symbols-outlined text-7xl text-secondary-text-light dark:text-secondary-text-dark">favorite</span>
+                    <h2 class="mt-4 text-2xl font-bold">Your Wishlist is Empty</h2>
+                    <p class="mt-2 max-w-sm text-secondary-text-light dark:text-secondary-text-dark">Save your favorite items here to easily find them later and get notified about sales.</p>
+                    <button class="mt-6 flex h-12 min-w-48 items-center justify-center rounded-lg bg-foreground-light px-6 text-base font-bold text-background-light dark:bg-foreground-dark dark:text-background-dark">Start Shopping</button>
+                </div>
+                -->
+<!-- Recommendation Section -->
+<div class="mt-16 md:mt-24">
+<h2 class="text-2xl font-bold tracking-tight mb-6">You May Also Like</h2>
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+<!-- Recommendation Card 1 -->
+<div class="group flex flex-col overflow-hidden rounded-xl border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark">
+<div class="aspect-[3/4] overflow-hidden">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Denim Trucker Jacket" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjf7bMdWPj7rgu4u-Dn6HAjdHP3g4C5OTpC6Utg9FxeMXD0pit2T7X1evA7ZNGPEpWB3dYegb5m_xULjSAm7i6r8GkUVPV7Pl9WGTRiIpnWsl3_mTD1fEZJOcQP0VbUB4go4N0rSNg26maQT2Yl8kfl5XMMZHYxJ5AyNq-HT3v5LgaYe6Ou_E5bLMh2GlN5nN-Cd5iKt1x-_K-o_j8bMDSmyLu3tPP36m4iBpZAqb0fJB21BUZbLOAiV5ohHiwfDIYmsRk9J6_fMEL");'></div>
+</div>
+<div class="p-4">
+<h3 class="font-bold leading-tight"><a class="hover:underline" href="#">Denim Trucker Jacket</a></h3>
+<p class="mt-1 font-semibold">$119.00</p>
+</div>
+</div>
+<!-- Recommendation Card 2 -->
+<div class="group flex flex-col overflow-hidden rounded-xl border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark">
+<div class="aspect-[3/4] overflow-hidden">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Leather Chelsea Boots" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCD8imABbtn2DimQyUkw6Ik7kVYw8uwhfRoBHvCFpRUpznHNBXt0SexF7p0Fx3X8hF-_ngL1jyX4n1Kb4IMhBJkv56WG_oS2NSrJ5kMdqStXRds0JMikO5HrNJKsOWKV_JtmJ6bvzMhvxFD8Z9EkRMPAbJ_brco05hHCW6GTJjfKdZqo3onEUTmRB8uegmepB2_VoZGrcIl9MGakYFO8yt65IbCG-RNKdXtYvMQ2mjgUjjQN7KZ1yolEFcWz3faOX-Sue5m9EJdfEC3");'></div>
+</div>
+<div class="p-4">
+<h3 class="font-bold leading-tight"><a class="hover:underline" href="#">Leather Chelsea Boots</a></h3>
+<p class="mt-1 font-semibold">$180.00</p>
+</div>
+</div>
+<!-- Recommendation Card 3 -->
+<div class="group flex flex-col overflow-hidden rounded-xl border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark">
+<div class="aspect-[3/4] overflow-hidden">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Merino Wool Sweater" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAebbKtA44MLouPlJ-Qmh-AzXinMUi3WqH1WmUa8TTZ5Ms6jfJVgUcejCfmTyxN9_SbM-XZrNsUgWA2K5QufGDkbut8VgueHBwE4U5iW0OGPYnPWDHWK2NMqBLAsBdg61PaAWQMkNdfJsRiKkvtSlDmP4wRIElDvu78T4Net9ibkc6HjAi3FGWcASHc8c2JknKL7V0yGu5I_zoiBfC88UgtH9r32VGQt9_6r-MYyZT91ATZlphzEsGUDKR60mT2v08XpikdR2ZnUgj");'></div>
+</div>
+<div class="p-4">
+<h3 class="font-bold leading-tight"><a class="hover:underline" href="#">Merino Wool Sweater</a></h3>
+<p class="mt-1 font-semibold">$89.50</p>
+</div>
+</div>
+<!-- Recommendation Card 4 -->
+<div class="group flex flex-col overflow-hidden rounded-xl border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark">
+<div class="aspect-[3/4] overflow-hidden">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Classic Timeless Watch" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCpsZ9C4FehYLZoNneOL0kxd0ZQbxH9zvB_zCwxrC-2qtuVuQmz_af-bcMO_itprCGT5lpvElVS9Li-U7ddcd0j51Gc6M8y-xzMmlh00ckmn8A-CzE_D8pcvExNoENrnMhF-p_DX1n6Cj8OvK65nVrp2TFFdgUW2PeWXqxDFIVQqMTA4w8YQlX_eIl5Vv0B8aMRvtYHOaeOlQCQs2DTqnDb71PNOSFvKG5pMdcxlvtwW-NprrKLui7Zc8S1koMxq_BhlEGPBUoGTD2Y");'></div>
+</div>
+<div class="p-4">
+<h3 class="font-bold leading-tight"><a class="hover:underline" href="#">Classic Timeless Watch</a></h3>
+<p class="mt-1 font-semibold">$450.00</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>
